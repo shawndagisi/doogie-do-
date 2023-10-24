@@ -103,3 +103,16 @@ footer {
 	bottom: 0;
 	color: #ffffff;
 }
+
+#breedInput {
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 6px;
+	background: #212534;
+	color: #58c7fa;
+	font-size: 1.2em;
+	font-family: cursive;
+	padding: 10px;
+	margin-bottom: 10px;
+}
