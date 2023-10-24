@@ -62,3 +62,44 @@ img {
 	max-width: var(--card-width);
 	max-height: calc(var(--card-height) * 0.6);
 }
+
+#breedDetails {
+	border: #3c67e3 2px solid;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#breedDetails:hover {
+	border: #c827d6 2px solid;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.likes {
+	width: calc(var(--card-width) * 0.8);
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0 0 0;
+}
+
+.likes i {
+	color: red;
+	transition: transform 0.1s;
+}
+
+.likes i:active {
+	transform: scale(2);
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	color: #ffffff;
+}
