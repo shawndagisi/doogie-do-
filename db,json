@@ -1,0 +1,484 @@
+{
+  "breeds": [
+    {
+      "id": 1,
+      "name": "affenpinscher",
+      "likes": 0
+    },
+    {
+      "id": 2,
+      "name": "african",
+      "likes": 0
+    },
+    {
+      "id": 3,
+      "name": "airedale",
+      "likes": 0
+    },
+    {
+      "id": 4,
+      "name": "akita",
+      "likes": 2
+    },
+    {
+      "id": 5,
+      "name": "appenzeller",
+      "likes": 0
+    },
+    {
+      "id": 6,
+      "name": "australian",
+      "likes": 0
+    },
+    {
+      "id": 7,
+      "name": "basenji",
+      "likes": 0
+    },
+    {
+      "id": 8,
+      "name": "beagle",
+      "likes": 0
+    },
+    {
+      "id": 9,
+      "name": "bluetick",
+      "likes": 0
+    },
+    {
+      "id": 10,
+      "name": "borzoi",
+      "likes": 0
+    },
+    {
+      "id": 11,
+      "name": "bouvier",
+      "likes": 0
+    },
+    {
+      "id": 12,
+      "name": "boxer",
+      "likes": 7
+    },
+    {
+      "id": 13,
+      "name": "brabancon",
+      "likes": 0
+    },
+    {
+      "id": 14,
+      "name": "briard",
+      "likes": 0
+    },
+    {
+      "id": 15,
+      "name": "buhund",
+      "likes": 0
+    },
+    {
+      "id": 16,
+      "name": "bulldog",
+      "likes": 0
+    },
+    {
+      "id": 17,
+      "name": "bullterrier",
+      "likes": 0
+    },
+    {
+      "id": 18,
+      "name": "cattledog",
+      "likes": 0
+    },
+    {
+      "id": 19,
+      "name": "chihuahua",
+      "likes": 0
+    },
+    {
+      "id": 20,
+      "name": "chow",
+      "likes": 0
+    },
+    {
+      "id": 21,
+      "name": "clumber",
+      "likes": 0
+    },
+    {
+      "id": 22,
+      "name": "cockapoo",
+      "likes": 0
+    },
+    {
+      "id": 23,
+      "name": "collie",
+      "likes": 0
+    },
+    {
+      "id": 24,
+      "name": "coonhound",
+      "likes": 0
+    },
+    {
+      "id": 25,
+      "name": "corgi",
+      "likes": 0
+    },
+    {
+      "id": 26,
+      "name": "cotondetulear",
+      "likes": 0
+    },
+    {
+      "id": 27,
+      "name": "dachshund",
+      "likes": 0
+    },
+    {
+      "id": 28,
+      "name": "dalmatian",
+      "likes": 0
+    },
+    {
+      "id": 29,
+      "name": "dane",
+      "likes": 0
+    },
+    {
+      "id": 30,
+      "name": "deerhound",
+      "likes": 0
+    },
+    {
+      "id": 31,
+      "name": "dhole",
+      "likes": 0
+    },
+    {
+      "id": 32,
+      "name": "dingo",
+      "likes": 0
+    },
+    {
+      "id": 33,
+      "name": "doberman",
+      "likes": 0
+    },
+    {
+      "id": 34,
+      "name": "elkhound",
+      "likes": 0
+    },
+    {
+      "id": 35,
+      "name": "entlebucher",
+      "likes": 2
+    },
+    {
+      "id": 36,
+      "name": "eskimo",
+      "likes": 0
+    },
+    {
+      "id": 37,
+      "name": "finnish",
+      "likes": 0
+    },
+    {
+      "id": 38,
+      "name": "frise",
+      "likes": 0
+    },
+    {
+      "id": 39,
+      "name": "germanshepherd",
+      "likes": 0
+    },
+    {
+      "id": 40,
+      "name": "greyhound",
+      "likes": 0
+    },
+    {
+      "id": 41,
+      "name": "groenendael",
+      "likes": 0
+    },
+    {
+      "id": 42,
+      "name": "havanese",
+      "likes": 0
+    },
+    {
+      "id": 43,
+      "name": "hound",
+      "likes": 0
+    },
+    {
+      "id": 44,
+      "name": "husky",
+      "likes": 0
+    },
+    {
+      "id": 45,
+      "name": "keeshond",
+      "likes": 0
+    },
+    {
+      "id": 46,
+      "name": "kelpie",
+      "likes": 0
+    },
+    {
+      "id": 47,
+      "name": "komondor",
+      "likes": 0
+    },
+    {
+      "id": 48,
+      "name": "kuvasz",
+      "likes": 0
+    },
+    {
+      "id": 49,
+      "name": "labradoodle",
+      "likes": 0
+    },
+    {
+      "id": 50,
+      "name": "labrador",
+      "likes": 0
+    },
+    {
+      "id": 51,
+      "name": "leonberg",
+      "likes": 0
+    },
+    {
+      "id": 52,
+      "name": "lhasa",
+      "likes": 0
+    },
+    {
+      "id": 53,
+      "name": "malamute",
+      "likes": 0
+    },
+    {
+      "id": 54,
+      "name": "malinois",
+      "likes": 0
+    },
+    {
+      "id": 55,
+      "name": "maltese",
+      "likes": 0
+    },
+    {
+      "id": 56,
+      "name": "mastiff",
+      "likes": 0
+    },
+    {
+      "id": 57,
+      "name": "mexicanhairless",
+      "likes": 0
+    },
+    {
+      "id": 58,
+      "name": "mix",
+      "likes": 0
+    },
+    {
+      "id": 59,
+      "name": "mountain",
+      "likes": 0
+    },
+    {
+      "id": 60,
+      "name": "newfoundland",
+      "likes": 0
+    },
+    {
+      "id": 61,
+      "name": "otterhound",
+      "likes": 0
+    },
+    {
+      "id": 62,
+      "name": "ovcharka",
+      "likes": 0
+    },
+    {
+      "id": 63,
+      "name": "papillon",
+      "likes": 0
+    },
+    {
+      "id": 64,
+      "name": "pekinese",
+      "likes": 0
+    },
+    {
+      "id": 65,
+      "name": "pembroke",
+      "likes": 0
+    },
+    {
+      "id": 66,
+      "name": "pinscher",
+      "likes": 0
+    },
+    {
+      "id": 67,
+      "name": "pitbull",
+      "likes": 0
+    },
+    {
+      "id": 68,
+      "name": "pointer",
+      "likes": 0
+    },
+    {
+      "id": 69,
+      "name": "pomeranian",
+      "likes": 0
+    },
+    {
+      "id": 70,
+      "name": "poodle",
+      "likes": 0
+    },
+    {
+      "id": 71,
+      "name": "pug",
+      "likes": 0
+    },
+    {
+      "id": 72,
+      "name": "puggle",
+      "likes": 0
+    },
+    {
+      "id": 73,
+      "name": "pyrenees",
+      "likes": 0
+    },
+    {
+      "id": 74,
+      "name": "redbone",
+      "likes": 0
+    },
+    {
+      "id": 75,
+      "name": "retriever",
+      "likes": 0
+    },
+    {
+      "id": 76,
+      "name": "ridgeback",
+      "likes": 0
+    },
+    {
+      "id": 77,
+      "name": "rottweiler",
+      "likes": 0
+    },
+    {
+      "id": 78,
+      "name": "saluki",
+      "likes": 0
+    },
+    {
+      "id": 79,
+      "name": "samoyed",
+      "likes": 0
+    },
+    {
+      "id": 80,
+      "name": "schipperke",
+      "likes": 0
+    },
+    {
+      "id": 81,
+      "name": "schnauzer",
+      "likes": 0
+    },
+    {
+      "id": 82,
+      "name": "setter",
+      "likes": 0
+    },
+    {
+      "id": 83,
+      "name": "sharpei",
+      "likes": 0
+    },
+    {
+      "id": 84,
+      "name": "sheepdog",
+      "likes": 0
+    },
+    {
+      "id": 85,
+      "name": "shiba",
+      "likes": 0
+    },
+    {
+      "id": 86,
+      "name": "shihtzu",
+      "likes": 0
+    },
+    {
+      "id": 87,
+      "name": "spaniel",
+      "likes": 0
+    },
+    {
+      "id": 88,
+      "name": "springer",
+      "likes": 0
+    },
+    {
+      "id": 89,
+      "name": "stbernard",
+      "likes": 0
+    },
+    {
+      "id": 90,
+      "name": "terrier",
+      "likes": 3
+    },
+    {
+      "id": 91,
+      "name": "tervuren",
+      "likes": 0
+    },
+    {
+      "id": 92,
+      "name": "vizsla",
+      "likes": 0
+    },
+    {
+      "id": 93,
+      "name": "waterdog",
+      "likes": 0
+    },
+    {
+      "id": 94,
+      "name": "weimaraner",
+      "likes": 0
+    },
+    {
+      "id": 95,
+      "name": "whippet",
+      "likes": 0
+    },
+    {
+      "id": 96,
+      "name": "wolfhound",
+      "likes": 0
+    }
+  ]
+}

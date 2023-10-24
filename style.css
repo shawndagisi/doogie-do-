@@ -1,3 +1,105 @@
-h1{
-    text-align: center;
+:root {
+	--card-height: 65vh;
+	--card-width: calc(var(--card-height) / 1.5);
+}
+
+body {
+	min-height: 100vh;
+	max-height: 100vh;
+	overflow: hidden;
+	background: #212534;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	box-sizing: border-box;
+}
+
+.card {
+	background: #191c29;
+	width: var(--card-width);
+	height: var(--card-height);
+	padding: 3px;
+	position: relative;
+	border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 1.2em;
+	color: #58c7fa;
+	cursor: pointer;
+	font-family: cursive;
+}
+
+.card:hover:after {
+	background-image: linear-gradient(132deg, #9c81fa, #c827d6 43%, #4a0fa1);
+}
+
+.card::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--card-height) / 6);
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	filter: blur(calc(var(--card-height) / 6));
+	background-image: linear-gradient(132deg, #5ddcff, #3c67e3 43%, #4e00c2);
+	opacity: 1;
+	transition: opacity 0.5s;
+	animation: spin 10s linear infinite;
+}
+
+img {
+	height: auto;
+	width: auto;
+	max-width: var(--card-width);
+	max-height: calc(var(--card-height) * 0.6);
+}
+
+#breedDetails {
+	border: #3c67e3 2px solid;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+#breedDetails:hover {
+	border: #c827d6 2px solid;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.likes {
+	width: calc(var(--card-width) * 0.8);
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0 0 0;
+}
+
+.likes i {
+	color: red;
+	transition: transform 0.1s;
+}
+
+.likes i:active {
+	transform: scale(2);
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	color: #ffffff;
 }
