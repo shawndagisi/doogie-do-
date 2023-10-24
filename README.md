@@ -1,7 +1,5 @@
 # doogie-do-
 
-# Doggie Doo
-
 ## Description
 
 This is Doggie Doo, a simple web app that allows you to view random images of man's best friend. For the carefree, get some completely random pictures or exercise some control by filtering the breed.
