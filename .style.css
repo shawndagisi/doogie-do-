@@ -55,3 +55,10 @@ body {
 	transition: opacity 0.5s;
 	animation: spin 10s linear infinite;
 }
+
+img {
+	height: auto;
+	width: auto;
+	max-width: var(--card-width);
+	max-height: calc(var(--card-height) * 0.6);
+}
