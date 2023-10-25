@@ -4,6 +4,7 @@ const breedName = document.querySelector("#breedName");
 const dogImage = document.querySelector("#dogImage");
 const breedDetails = document.querySelector("#breedDetails");
 const breedLikes = document.querySelector("#likes");
+const likesButton = document.querySelector(".likes i");
 
 const LIVEENV = true;
 let currentBreed = {};
@@ -92,4 +93,69 @@ function renderRandomImage(res) {
 			addlikesListener = true;
 		});
 	}
+}
+
+//get random image by breed
+breedInput.addEventListener("change", (e) => {
+	fetchRandomImage(e.target.value).then((data) => {
+		renderRandomImage(data);
+	});
+});
+
+// change text on hover
+breedDetails.addEventListener("mouseover", (e) => {
+	breedDetails.textContent = "Click me to meet a new friend!";
+});
+
+breedDetails.addEventListener("mouseout", (e) => {
+	breedDetails.textContent = "Hope you like your new Friend!";
+});
+
+//change image on click
+breedDetails.addEventListener("click", (e) => {
+	let breed = breedInput.value || null;
+	fetchRandomImage(breed).then((data) => {
+		renderRandomImage(data);
+	});
+});
+
+function fetchLikes(displayedBreed) {
+	axios
+		.get("http://localhost:3000/breeds", {
+			headers: {
+				"Content-Type": "application/json",
+			},
+		})
+		.then((res) => {
+			displayedBreed.split("-").length > 1
+				? (displayedBreed = displayedBreed.split("-")[0])
+				: displayedBreed;
+
+			console.log(displayedBreed);
+			res.data.filter((breed) => {
+				if (breed.name === displayedBreed) {
+					breedLikes.textContent = `${breed.likes} likes`;
+					currentBreed = breed;
+					return breed;
+				}
+			});
+		})
+		.catch((err) => {
+			console.log(err);
+			// document.location.reload();
+		});
+}
+
+function likeBreed() {
+	return axios({
+		method: "patch",
+		url: `http://localhost:3000/breeds/${currentBreed.id}`,
+		data: {
+			likes: currentBreed.likes,
+		},
+	})
+		.then((res) => null)
+		.catch((err) => {
+			console.log(err);
+		});
 }
