@@ -63,3 +63,33 @@ function renderBreedList(res) {
 		breedInput.appendChild(option);
 	});
 }
+let addlikesListener = false;
+
+function renderRandomImage(res) {
+	let url = res.data.message;
+	dogImage.src = url;
+	breedName.textContent = url.split("/")[4];
+	dogImage.alt = breedName.textContent;
+	breedDetails.textContent = "Hope you like your new Friend!";
+	breedLikes.textContent = `0 likes`;
+
+	//check on local
+	LIVEENV ? null : fetchLikes(breedName.textContent);
+
+	//Add likes
+	likesButton.removeEventListener("click", (e) => {
+		console.log(e);
+	});
+
+	if (!addlikesListener) {
+		likesButton.addEventListener("click", (e) => {
+			const likes = parseInt(breedLikes.textContent.split(" ")[0]) + 1;
+			currentBreed.likes = likes;
+			breedLikes.textContent = `${likes} likes`;
+
+			//Update likes in database if on local
+			LIVEENV ? null : likeBreed();
+			addlikesListener = true;
+		});
+	}
+}
